@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  background-color: azure;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+img {
+  max-width: 100%;
+}
+p {
+  color: #000;
+}
+
+/* navbar */
+
+.logo img {
+  width: 100px;
+}
+.header {
+  padding: 1rem 1.5rem;
+}
+.navbar-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__flex-items {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.nav__flex-items li a {
+  font-size: 18px;
+}
+.current {
+  opacity: 0.6;
+}
+main {
+  padding: 0 15rem;
+}
+/* about */
+.about-items {
+  text-align: center;
+  font-family: inherit;
+}
+.about-items h2 {
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+/* team members */
+.team {
+  margin: 3rem 0;
+}
+.team-flex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+.team-items h2 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.team-member img {
+  border-radius: 10px;
+}
+/* footer */
+.footer {
+  background: #000;
+  padding: 1.5rem 2rem;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-flex img {
+  width: 50px;
+}
+.footer-contact-flex p,
+.footer-contact-flex h4,
+.footer-socials h4 {
+  color: #fff;
+}
+.footer-contact-flex h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.footer-socials h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.footer-socials-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+.footer-socials-flex a i {
+  color: #fff;
+}
+.footer-socials-flex a i:hover {
+  opacity: 0.8;
+}
+/* Media query */
+@media (max-width: 768px) {
+  main {
+    padding: 0 3rem;
+  }
+  .navbar-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .team-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+  }
+  .footer-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-contact {
+    flex-direction: column;
+    gap: 0.3rem;
+    padding-bottom: 1rem;
+  }
+  .footer-contact-flex h4 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+}

@@ -4,4 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   mobileToggle.addEventListener("click", function () {
     mobileMenu.classList.toggle("mobile-display");
   });
+  const x = 0;
+  if (x === 0) {
+    console.log("x is zero");
+  }
 });
